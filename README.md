@@ -12,18 +12,18 @@
 ### A Single Image Haze Removal Using Dark Channel Prior
 You can remove a single image's haze by running the command:
 
-'''bash
+```bash
 python A/dehaze.py --img_roor <img_root> --output <output_root>
-'''
+```
 
 You can also modify the hyperparameter configuartion.
 
 ### Background Substraction With Gaussian Mixture Model
 You can achieve a background substraction for an image floder by running the command:
 
-'''bash
+```bash
 python A/gmm.py --input <input_root>  --output <output_root>
-'''
+```
 
 You can also modify the hyperparameter configuartion.
 
