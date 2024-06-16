@@ -28,3 +28,21 @@ python A/gmm.py --input <input_root>  --output <output_root>
 You can also modify the hyperparameter configuartion.
 
 ## 高层视觉语义分割
+
+### Date Preparation
+
+You need to download the [Cityscapes](https://www.cityscapes-dataset.com/)datasets.
+
+Your directory tree should be look like this:
+````bash
+$SEG_ROOT/data
+├── cityscapes
+│   ├── gtFine
+│   │   ├── test
+│   │   ├── train
+│   │   └── val
+│   └── leftImg8bit
+│       ├── test
+│       ├── train
+│       └── val
+````
