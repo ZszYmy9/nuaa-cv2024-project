@@ -7,6 +7,9 @@
 
 162100104 周扬超
 
+## 指导教师
+梁栋
+
 ## 底层视觉低层视觉及传统方法
 
 ### A Single Image Haze Removal Using Dark Channel Prior
