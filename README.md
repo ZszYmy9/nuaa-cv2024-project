@@ -75,5 +75,72 @@ bash run_with_ocr.sh
 ```
 The results will be saved at test_results.
 
+## 风格迁移
+### StyTr^2
+For training StyTr2, your directory tree should be look like this:
+````bash
+$SEG_ROOT/data
+├── train2014
+│   ├── 1.png
+│   ├── 2.png
+│   ├── ...
+├── wikiart
+│   ├── 1.png
+│   ├── 2.png
+│   ├── ...
+````
+If you want to train your StyTr^2, you can run the command:
+````bash
+python train.py --batch_size 8
+````
+The pretrained model can be accessed [here](https://github.com/diyiiyiii/StyTR-2)
+
+If you want to have a test, you can run the command:
+````bash
+python test.py
+````
+### PuffNet
+Your directory tree should be the same as the above.
+
+If you want to train your PuffNet on a file folder, you can run the command:
+````bash
+python train.py --batch_size 8 --content_data <content_data> --style_data <style_data> --train True
+````
+
+If you want to test your PuffNet on a file folder, you can run the command:
+````bash
+python train.py --content_data <content_data> --style_data <style_data> --train False
+````
+
+If you want to test your PuffNet on a couple of images, you can run the command:
+````bash
+python test.py
+````
+
+### Dreambooth
+For training Dreambooth, your directory tree should be look like this:
+````bash
+$SEG_ROOT/A
+├── 00
+│   ├── images
+│   │   ├── cow.png
+│   │   ├── ...
+│   └──prompt.json
+├── 01
+│   ├── images
+│   │   ├── dog.png
+│   │   ├── ...
+│   └──prompt.json
+├── ...
+````
+If you want to train your Dreambooth, you can run the command:
+````bash
+bash train_all.sh
+````
+If you want to test your Dreambooth, you can run the command:
+````bash
+python run_all.py
+````
+
 
 
