@@ -66,12 +66,8 @@ bash run_without_ocr.sh
 The results will be saved at test_results.
 
 ### HRNetV2 + OCR
-The pretrained model can be accessed The pretrained model can be accessed [Github](https://github.com/hsfzxjy/models.storage/releases/download/HRNet-OCR/hrnet_cs_8090_torch11.pth)/[BaiduYun(Access Code:pmix)](https://pan.baidu.com/s/1KyiOUOR0SYxKtJfIlD5o-w).
-You can have a test on val set by running the command:
-```bash
-bash run_without_ocr.sh
-```
-The results will be saved at test_results.
+The pretrained model can be accessed [Github](https://github.com/hsfzxjy/models.storage/releases/download/HRNet-OCR/hrnet_cs_8090_torch11.pth)/[BaiduYun(Access Code:pmix)](https://pan.baidu.com/s/1KyiOUOR0SYxKtJfIlD5o-w).
+
 You can have a test on val set by running the command:
 ```bash
 bash run_with_ocr.sh
@@ -94,7 +90,7 @@ $SEG_ROOT/data
 ````
 If you want to train your StyTr^2, you can run the command:
 ````bash
-python train.py --batch_size 8
+python train.py
 ````
 The pretrained model can be accessed [here](https://github.com/diyiiyiii/StyTR-2)
 
